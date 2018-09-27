@@ -59,7 +59,7 @@ public class WeChatPayAsyncResponse {
     private String bankType;
 
     @Element(name = "settlement_total_fee", required = false)
-    private Integer settlementTotalFee;
+    private String settlementTotalFee;
 
     @Element(name = "total_fee", required = false)
     private Integer totalFee;
@@ -68,16 +68,16 @@ public class WeChatPayAsyncResponse {
     private String feeType;
 
     @Element(name = "cash_fee", required = false)
-    private Integer cashFee;
+    private String cashFee;
 
     @Element(name = "cash_fee_type", required = false)
     private String cashFeeType;
 
     @Element(name = "coupon_fee", required = false)
-    private Integer couponFee;
+    private String couponFee;
 
     @Element(name = "coupon_count", required = false)
-    private Integer couponCount;
+    private String couponCount;
 
     @Element(name = "coupon_id_0", required = false)
     private String couponId0;

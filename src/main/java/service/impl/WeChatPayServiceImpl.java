@@ -257,7 +257,7 @@ public class WeChatPayServiceImpl implements WeChatPayService {
         map.put("device_info", response.getDeviceInfo());
         map.put("nonce_str", response.getNonceStr());
         map.put("sign", response.getSign());
-        map.put("settlement_total_fee", String.valueOf(response.getSettlementTotalFee()));
+        map.put("settlement_total_fee", response.getSettlementTotalFee());
         map.put("result_code", response.getResultCode());
         map.put("err_code", response.getErrCode());
         map.put("err_code_des", response.getErrCodeDes());
@@ -267,13 +267,13 @@ public class WeChatPayServiceImpl implements WeChatPayService {
         map.put("bank_type", response.getBankType());
         map.put("total_fee", String.valueOf(response.getTotalFee()));
         map.put("fee_type", response.getFeeType());
-        map.put("cash_fee", String.valueOf(response.getCashFee()));
+        map.put("cash_fee", response.getCashFee());
         map.put("cash_fee_type", response.getCashFeeType());
-        map.put("coupon_fee", String.valueOf(response.getCouponFee()));
+        map.put("coupon_fee", response.getCouponFee());
         map.put("coupon_id_0", response.getCouponId0());
-        map.put("coupon_fee_0", String.valueOf(response.getCouponFee0()));
+        map.put("coupon_fee_0", response.getCouponFee0());
         map.put("coupon_type_0",response.getCouponType0());
-        map.put("coupon_count", String.valueOf(response.getCouponCount()));
+        map.put("coupon_count", response.getCouponCount());
         map.put("transaction_id", response.getTransactionId());
         map.put("out_trade_no", response.getOutTradeNo());
         map.put("attach", response.getAttach());

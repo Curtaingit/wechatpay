@@ -28,6 +28,7 @@ public class SignatureUtil {
             }
         }
 
+        //加上商户秘钥  注册签名串
         toSign.append("key=").append(signKey);
         return DigestUtils.md5Hex(toSign.toString()).toUpperCase();
     }
