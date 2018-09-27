@@ -5,6 +5,7 @@ import config.SignType;
 import model.request.PayRequest;
 import model.request.RefundRequest;
 import model.response.PayResponse;
+import model.response.QueryResponse;
 import model.response.RefundResponse;
 
 import java.util.Map;
@@ -67,5 +68,7 @@ public interface WeChatPayService {
      * @return
      */
     RefundResponse refund(RefundRequest request);
+
+    QueryResponse query(String orderId);
 
 }

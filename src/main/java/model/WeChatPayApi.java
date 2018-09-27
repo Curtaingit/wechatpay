@@ -1,5 +1,6 @@
 package model;
 
+import model.wechat.response.WeChatOrderQueryResponse;
 import model.wechat.response.WeChatPayRefundResponse;
 import model.wechat.response.WeChatPaySyncResponse;
 import okhttp3.RequestBody;
@@ -27,5 +28,13 @@ public interface WeChatPayApi {
      */
     @POST("/secapi/pay/refund")
     Call<WeChatPayRefundResponse> refund(@Body RequestBody body);
+
+    /**
+     * 订单查询
+     * @param body
+     * @return
+     */
+    @POST("/pay/orderquery")
+    Call<WeChatOrderQueryResponse> query(@Body RequestBody body);
 
 }
